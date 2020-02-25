@@ -62,31 +62,6 @@ The shopping `Cart` should have the following model:
 Implement code to satisfy the acceptance criteria below.  There are tests for all requirements in the file CartTest.java 
 in the test tree.  You can uncomment them, or, if you are more comfortable, you can test with the main method in App.java.
 
-
-## Instructions
-
-***Be sure to fork:***
-
-![Fork](./img/Fork.png)
-
-***then Clone:***
-
-![Clone](./img/Clone.png)
-
-***this repository!***
-
-When you are finished with the exercise, [commit](https://www.atlassian.com/git/tutorials/saving-changes) and [push](https://www.atlassian.com/git/tutorials/syncing#git-push) your work!
-
-You will know you have forked and pushed properly if you see your work in Github under your github account:
-
-![you](./img/personal.png)
-
-***not gSchool:***
-
-![gSchool](./img/gSchool.png)
-
-***Be sure to make a commit in git each time you get a passing test!***
-
 ## User Story:
 
 - As a shopper
