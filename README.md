@@ -6,57 +6,6 @@ Your job is to implement a shopping cart that stores items while customers are i
 
 You also don't need to worry about authentication or session tracking. You can assume that Ali Snobba's infrastructure will handle this for you.
 
-## API specifications
-
-A shopping cart `Item` should have the following model:
-
-| Item   |            |
-|--------|------------|
-| name   | String     |
-| price  | currency   |
-| onSale | bool       |
-
-The shopping `Cart` should have the following model:
-
-| Cart               |           |
-|--------------------|-----------|
-| getItems()         | Item(s)   |
-| addItem(Item, int) | void      |
-| itemizedList()     | String(s) |
-| itemQuantities()   | String(s) |
-| onSaleItems()      | String(s) |
-
-`addItem()` should take two parameters:
-
-1. An `Item` Object
-1. An integer `quantity`
-
-`itemQuantities()` should return one String for each type of item in the cart in the following format:
-
-```Java
-{
-    'Handbag - x2', 
-    'Watch - x4'
-}
-``` 
-
-`itemizedList()` should return one String for each item in the cart in the following format:
-
-```Java
-{
-    'Handbag x1 - $500.00', 
-    'Watch x2 - $40,000.00'
-}
-``` 
-
-`onSaleItems()` should return one String for each item in the cart marked as `onSale` in the following format:
-
-```Java
-{
-    'Handbag x1 - $250.00', 
-    'Watch x2 - $20,000.00'
-}
-```
 
 ## TODO
 Implement code to satisfy the acceptance criteria below.  There are tests for all requirements in the file CartTest.java 
