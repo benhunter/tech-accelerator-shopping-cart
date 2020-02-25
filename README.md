@@ -42,7 +42,7 @@ The shopping `Cart` should have the following model:
 
 `itemizedList()` should return one String for each item in the cart in the following format:
 
-```JavaScript
+```Java
 {
     'Handbag x1 - $500.00', 
     'Watch x2 - $40,000.00'
