@@ -51,10 +51,44 @@ public class CartTest {
         itemArrayList.add(item2);
 
         assertNotEquals(price1 + price2, cart.getTotalPrice());
+    }
+    
+    @Test
+    void testItemizedListShowsItemsAddedAndPrices(){
+        String expected = "These items are in your cart:\n" +
+                "Fruit, $4.50\n" +
+                "Ice Cream, $5.50\n";
+        
+        double price1 = 4.50;
+        double price2 = 5.50;
+        Cart cart = new Cart();
+        Item item1 = new Item("Fruit", price1);
+        Item item2 = new Item("Ice Cream", price2);
+        cart.addItem(item1);
+        cart.addItem(item2);
+
+        String actual = cart.itemizedList();
+        assertEquals(expected, actual);
 
     }
 
+    @Test
+    void testMultipleItemsOfSameType() {
+        double price1 = 4.50;
+        Cart cart = new Cart();
+        Item item1 = new Item("Fruit", price1);
+        Item item2 = new Item("Fruit", price1);
 
+        cart.addItem(item1);
+        cart.addItem(item2);
+
+        assertEquals(price1 * 2, cart.getTotalPrice());
+
+        int expectedQuantity = 2;
+        int actualQuantity = cart.itemQuantities();
+
+        assertEquals(expectedQuantity, actualQuantity);
+    }
 //    @Test
 //    public void ShouldDisplayItemizedList() {
 //        Cart cart = new Cart();
